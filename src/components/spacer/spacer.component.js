@@ -1,24 +1,24 @@
 import styled from "styled-components/native";
 
 const sizeVariant = {
-    small: 1,
-    medium: 2,
-    large: 3,
+  small: 1,
+  medium: 2,
+  large: 3,
 };
 
 const positionVariant = {
-    top: "marginTop",
-    left: "marginLeft",
-    right: "marginRight",
-    bottom: "marginBottom",
+  top: "marginTop",
+  left: "marginLeft",
+  right: "marginRight",
+  bottom: "marginBottom",
 };
 
 const getVariant = (position, size, theme) => {
-    const sizeIndex = sizeVariant[size];
-    const property = positionVariant[position];
-    const value = theme.space[sizeIndex];
+  const sizeIndex = sizeVariant[size];
+  const property = positionVariant[position];
+  const value = theme.space[sizeIndex];
 
-    return `${property}:${value}`;
+  return `${property}:${value}`;
 };
 
 export const Spacer = styled.View`
@@ -26,6 +26,6 @@ export const Spacer = styled.View`
 `;
 
 Spacer.defaultProps = {
-    position: "top",
-    size: "small",
+  position: "top",
+  size: "small",
 };
