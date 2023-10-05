@@ -32,7 +32,7 @@ export const RestaurantsScreen = () => {
     <SafeArea>
       {isLoading && (
         <LoadingContainer>
-          <Loading size={50} animating={true} />
+          <Loading size={50} animating={true} color={Colors.blue300} />
         </LoadingContainer>
       )}
       <Search />
